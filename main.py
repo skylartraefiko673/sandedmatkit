@@ -1,6 +1,6 @@
-"""indexer_0f833c - CLI application."""
+"""indexer_f7c0ec - CLI application."""
 import argparse, sys, time
-APP_NAME = "indexer_0f833c"
+APP_NAME = "indexer_f7c0ec"
 def parse_args():
     parser = argparse.ArgumentParser(description=APP_NAME)
     parser.add_argument("--verbose", "-v", action="store_true")
